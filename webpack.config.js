@@ -16,12 +16,11 @@ module.exports = {
     },
     output: {
         filename: 'index.js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'public'),
     },
     devServer: {
         contentBase: [
-            path.join(__dirname, 'dist'),
-            path.join(__dirname, 'assets'),
+            path.join(__dirname, 'public'),
         ],
         compress: true,
         port: 8008,
